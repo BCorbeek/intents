@@ -1,2 +1,11 @@
 language: sw
-tests: []
+tests:
+  - sentences:
+      - "panzia kushoto imefungwa"
+    intent:
+      name: HassGetState
+      slots:
+        domain: cover
+        name: "panzia kushoto"
+        state: "closed"
+    response: "hapana, ipo wazi"
